@@ -1,6 +1,6 @@
 ---
 - name: Playbook for learning to troubleshoot...can you find/fix the errors?
-  hosts: TestHost1
+  hosts: Greg-rocky9
   gather_facts: false
   vars:
   tasks:

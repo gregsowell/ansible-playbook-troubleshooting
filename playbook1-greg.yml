@@ -9,5 +9,5 @@
     register: sudoers-collect
 
   - name: Display collected variable info
-    ansible.builtin.dedug:
+    ansible.builtin.debug:
       msg: My sudo file users "{{ sudoers_collect.stdout_lines }}"

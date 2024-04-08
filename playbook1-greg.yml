@@ -6,7 +6,7 @@
   tasks:
   - name: Collect sudoers file contents
     ansible.builtin.shell: cat /etc/sudoers
-    register: sudoers-collect
+    register: sudoers_collect
 
   - name: Display collected variable info
     ansible.builtin.debug:

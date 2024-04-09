@@ -7,6 +7,7 @@
   - name: Collect sudoers file contents
     ansible.builtin.shell: cat /etc/sudoers
     register: sudoers_collect
+    become: true
 
   - name: Display collected variable info
     ansible.builtin.debug:

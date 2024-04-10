@@ -4,9 +4,9 @@
   gather_facts: false
   vars:
   tasks:
-  - name: Collect sudoers file contents
-    ansible.builtin.shell: cat /etc/sudoers
-    register: sudoers-collect
+    - name: Collect sudoers file contents
+      ansible.builtin.shell: cat /etc/sudoers
+      register: sudoers-collect
 
     - name: Display collected variable info
       ansible.builtin.dedug:

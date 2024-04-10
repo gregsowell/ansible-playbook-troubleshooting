@@ -2,11 +2,11 @@
 - name: Playbook for learning to troubleshoot...can you find/fix the errors?
   hosts: Greg-rocky9
   gather_facts: false
-  vars:
+  vars: 
   tasks:
     - name: Collect sudoers file contents
-      ansible.builtin.shell: cat /etc/sudoers
-      register: sudoers-collect
+      ansible.builtin.shell: cat /etc/sudoers 
+      register: sudoers_collect
 
     - name: Display collected variable info
       ansible.builtin.debug:
